@@ -299,24 +299,36 @@ p {
 .navbar-brand.topnav:focus { color:#c3c2c2 }
 
 h1 #trevor-koverko {
-    position: absolute;
     /*background-color: #18365d;*/
     /*color: #e7e7e7;*/
     /*color: #59adef; this is color of shirt and header*/
     color: #534956;
-    text-align: left;
-    margin: 0;
-    left: 12%;
-    top: 30%;
+
     padding: 8px 8px 4px 4px;
     font-size: 2.5em;
     /*font-size: 250%;*/
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
-    text-decoration-color: #2d3a62;
+    /*text-decoration-color: #2d3a62;*/
+    text-decoration-color: black;
     text-transform: uppercase;
     letter-spacing: -9px;
     font-weight: 700;
+}
+
+
+#tagline {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 8%;
+}
+
+#headline {
+    position: absolute;
+    text-align: left;
+    margin: 0;
+    left: 12%;
+    top: 20%; 
 }
 
 #header-img {
