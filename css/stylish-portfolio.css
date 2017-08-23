@@ -16,6 +16,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a, a:hover, a:focus { 
+    color: inherit; 
+    text-decoration: none;
+    color: inherit;
+
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -157,15 +164,18 @@ hr.small {
     width: 100%;
     /*height: 100%;*/
     display: inline-block;
-    /*overflow: hidden;*/
+    height: 104vh;
+    overflow: hidden;
     /*margin-top: 50px;*/
-    /*background: url(../img/trevor-koverko.jpg) no-repeat top center scroll; */
+    background: url(../img/trevor-koverko-background.jpg) no-repeat top center scroll; 
     /*background: url(../img/trevor-koverko.jpg);*/
     /*-webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
     -o-background-size: contain;*/
 }
+
+
 
 /* Services */
 
@@ -188,7 +198,8 @@ hr.small {
     padding-top: 30px;
     padding-bottom: 30px;
     color: black;
-    background: url(../img/parallax.jpg) no-repeat center center scroll;
+    background: url(../img/parallax.jpg) center center scroll;
+    border-top: 2px solid #534956;
 /*    -webkit-filter: blur(2px);
     -moz-filter: blur(2px);
     -o-filter: blur(2px);
@@ -215,15 +226,39 @@ hr.small {
 
 .portfolio-item {
     margin-bottom: 30px;
+    height: 220px;
+    background-color: #e7e7e7;
+    padding: 20px;
 }
+
+.portfolio-item:hover {
+    /*opacity: 0.8;*/
+    background-color: #dae1ff;
+    cursor: pointer;
+}
+
+.portfolio-item > h3, .portfolio-item > h4 {
+    height: 50px;
+    color: #2d3a62;
+}
+
+.portfolio-item > h4 {
+    height: 20px;
+    padding-top: 10px;
+}
+
+
+/*.portfolio-item * {
+    position: relative;
+    bottom: 0;
+}*/
 
 .img-portfolio {
     margin: 0 auto;
+    height: 40px;
+    max-width: 90px;
 }
 
-.img-portfolio:hover {
-    opacity: 0.8;
-}
 
 /* Call to Action */
 
@@ -266,24 +301,26 @@ footer {
 
 /*svg wordcloud*/
 #wordcloud-svg {
-    margin-top: 100px;
-    width: 70%;
+    margin-top: 10px;
+    width: 90%;
+    margin-right: 10%;
 
 }
 #svg-div {
+    /*border-top: 2px solid #534956;*/
+    /*border-bottom: 2px solid #534956;*/
+    /*border: 1em solid #dae1ff;*/
+    /*border-bottom: 1em solid #dae1ff;*/
     text-align: center;
-    background: url(../img/debut_dark.png);
+    /*background: url(../img/debut_dark.png);*/
+    /*background-color: #2d3a62;*/
+    /*background-color: #e7e7e7;*/
     position: relative;
-    top: -40px;
+    top: -5px;
 }
 
 p {
     font-size: 18px;
-}
-
-.navbar {
-    text-transform: uppercase;
-    font-weight: 700;
 }
 
 .nav.navbar-nav.navbar-right {
@@ -302,15 +339,19 @@ h1 #trevor-koverko {
     /*background-color: #18365d;*/
     /*color: #e7e7e7;*/
     /*color: #59adef; this is color of shirt and header*/
-    color: #534956;
+    /*color: #534956;*/
+
+    /*background: -webkit-linear-gradient(#868188, #534956); /* For Safari 5.1 to 6.0 */*/
+    /*background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */*/
+    /*background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */*/
+    /*background: linear-gradient(#868188, #534956); /* Standard syntax */*/
 
     padding: 8px 8px 4px 4px;
     font-size: 2.5em;
     /*font-size: 250%;*/
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
-    /*text-decoration-color: #2d3a62;*/
-    text-decoration-color: black;
+    text-decoration-color: #2d3a62;
     text-transform: uppercase;
     letter-spacing: -9px;
     font-weight: 700;
@@ -321,6 +362,7 @@ h1 #trevor-koverko {
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 8%;
+    color: #2d3a62;
 }
 
 #headline {
@@ -328,13 +370,19 @@ h1 #trevor-koverko {
     text-align: left;
     margin: 0;
     left: 12%;
-    top: 20%; 
+    top: 26%; 
 }
 
 #header-img {
-    margin-top: 50px;
-    position: relative;
-    width: 100%;
+    /*margin-top: 50px;*/
+    position: absolute;
+    /*height: 100vh;*/
+    margin-left: 50%;
+    height: 80vh;
+    /*top: 40vh;*/
+    /*top: 14vw;*/
+    bottom: 0;
+    /*margin-top: 20vh;*/
 }
 
 .font-size-50px {
@@ -347,6 +395,8 @@ h1 #trevor-koverko {
     background-color: #2d3a62; 
     border: none;
     margin-bottom: none;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -357,7 +407,7 @@ h1 #trevor-koverko {
     color: #dae1ff !important;
 }
 
-.navbar-default .navbar-nav>li.active>a, .navbar-default .navbar-nav>li.active>a:focus {
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>li.active>a, .navbar-default .navbar-nav>li.active>a:focus {
     color: #dae1ff;
     background-color: #2d3a62;
 }
@@ -383,13 +433,30 @@ input, select, textarea {
 }
 
 .about {
-    background: url(../img/p6.png);
+    border-top: 1em solid #534956;
+    /*background: url(../img/p6.png);*/
+    background: url(../img/brushed.png);
+    /*background-color: #2d3a62;*/
     position: relative;
     padding: 20px;
     top: -20px;
+    margin-top: 10px;
     /*color: white;*/
 }
 
 .about h2 {
     color: #534956;
+}
+
+
+/*ONLY LARGE*/
+@media screen and (min-width: 1000px) {
+
+    .about > div > div > div {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+        column-gap: 50px;
+    }
+
 }
