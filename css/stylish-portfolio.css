@@ -232,7 +232,9 @@ hr.small {
 .portfolio-item {
     margin-bottom: 30px;
     height: 220px;
-    background-color: #e7e7e7;
+    /*background-color: #e7e7e7;*/
+    background-color: white;
+    border: 1px solid black;
     padding: 20px;
 }
 
@@ -260,7 +262,7 @@ hr.small {
 
 .img-portfolio {
     margin: 0 auto;
-    height: 40px;
+    height: 50px;
     max-width: 90px;
 }
 
@@ -294,8 +296,11 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 15px 0 5px 0;
+    background-color: #2d3a62;
 }
+
+footer i {color: white;}
 
 #to-top {
   display: none;
@@ -435,8 +440,11 @@ input, select, textarea {
     margin: 0px 20%;
 }
 
-.form-control {
+.form-control, .form-control:focus {
     margin: 5px 0px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
 }
 
 .high-text {
@@ -458,6 +466,20 @@ input, select, textarea {
     color: #534956;
 }
 
+/*CONTACT*/
+#contact {
+    background-color: #5066a9;
+}
+
+/*INVESTMENTS*/
+#investments > .container h2 {
+    margin-top: 50px;
+}
+
+#investments {
+    position: relative;
+    top: -5px;
+}
 
 /*ONLY LARGE*/
 @media screen and (min-width: 1000px) {
