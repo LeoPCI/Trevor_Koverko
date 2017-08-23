@@ -306,11 +306,16 @@ footer {
 
 /*svg wordcloud*/
 #wordcloud-svg {
-    margin-top: 10px;
-    width: 90%;
-    margin-right: 10%;
-
+    /*margin-top: 10px;*/
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 5%;
 }
+
+#wordcloud-svg text {
+    font-family: Montserrat;
+}
+
 #svg-div {
     /*border-top: 2px solid #534956;*/
     /*border-bottom: 2px solid #534956;*/
@@ -321,7 +326,8 @@ footer {
     /*background-color: #2d3a62;*/
     /*background-color: #e7e7e7;*/
     position: relative;
-    top: -5px;
+    top: -60px;
+    z-index: -1;
 }
 
 p {
