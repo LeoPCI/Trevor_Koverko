@@ -313,7 +313,7 @@ footer i {color: white;}
 #wordcloud-svg {
     /*margin-top: 10px;*/
     width: 50%;
-    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 5%;
 }
 
@@ -332,6 +332,7 @@ footer i {color: white;}
     /*background-color: #e7e7e7;*/
     position: relative;
     top: -60px;
+    left: -2%;
     z-index: -1;
 }
 
@@ -489,6 +490,10 @@ input, select, textarea {
 
 /*MOBILE*/
 @media screen and (max-width: 600px) {
+    #home {
+        height: 90vh;
+    }
+
     #headline {
         margin-right: 10%;
         top: 10%;
@@ -506,8 +511,8 @@ input, select, textarea {
     }
     #header-img {
         /*display: none;*/
-    margin-left: 20vw;
+    margin-left: 10vw;
     height: auto;
-    width: 52vw;
+    width: 72vw;
     }
 }
