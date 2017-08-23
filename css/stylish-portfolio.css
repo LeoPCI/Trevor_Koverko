@@ -495,8 +495,8 @@ input, select, textarea {
     }
 
     #headline {
-        margin-right: 10%;
-        top: 10%;
+        margin-right: 15%;
+        /*top: 10%;*/
     }
 
     #headline * {
@@ -510,9 +510,9 @@ input, select, textarea {
         font-size: 4vw;
     }
     #header-img {
-        /*display: none;*/
-    margin-left: 10vw;
-    height: auto;
-    width: 72vw;
+        display: none;
+        /*margin-left: 10vw;
+        height: auto;
+        width: 72vw;*/
     }
 }
