@@ -352,16 +352,6 @@ p {
 .navbar-brand.topnav:focus { color:#c3c2c2 }
 
 h1 #trevor-koverko {
-    /*background-color: #18365d;*/
-    /*color: #e7e7e7;*/
-    /*color: #59adef; this is color of shirt and header*/
-    /*color: #534956;*/
-
-    /*background: -webkit-linear-gradient(#868188, #534956); /* For Safari 5.1 to 6.0 */*/
-    /*background: -o-linear-gradient(right, red, yellow); /* For Opera 11.1 to 12.0 */*/
-    /*background: -moz-linear-gradient(right, red, yellow); /* For Firefox 3.6 to 15 */*/
-    /*background: linear-gradient(#868188, #534956); /* Standard syntax */*/
-
     padding: 8px 8px 4px 4px;
     font-size: 2.5em;
     /*font-size: 250%;*/
@@ -387,6 +377,10 @@ h1 #trevor-koverko {
     margin: 0;
     left: 12%;
     top: 26%; 
+}
+
+#headline h3 {
+    max-width: 450px;
 }
 
 #header-img {
@@ -491,4 +485,29 @@ input, select, textarea {
         column-gap: 50px;
     }
 
+}
+
+/*MOBILE*/
+@media screen and (max-width: 600px) {
+    #headline {
+        margin-right: 10%;
+        top: 10%;
+    }
+
+    #headline * {
+        text-align: center;
+    }
+
+    #headline h1 {
+        font-size: 6vw;
+    }
+    #headline h3 {
+        font-size: 4vw;
+    }
+    #header-img {
+        /*display: none;*/
+    margin-left: 20vw;
+    height: auto;
+    width: 52vw;
+    }
 }
