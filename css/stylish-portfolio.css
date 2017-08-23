@@ -23,6 +23,10 @@ a, a:hover, a:focus {
 
 }
 
+.about, #wordcloud-svg, #svg-div, .investments, body {
+    background: url(../img/p6.png);
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -200,6 +204,7 @@ hr.small {
     color: black;
     background: url(../img/parallax.jpg) center center scroll;
     border-top: 2px solid #534956;
+
 /*    -webkit-filter: blur(2px);
     -moz-filter: blur(2px);
     -o-filter: blur(2px);
@@ -434,8 +439,7 @@ input, select, textarea {
 
 .about {
     border-top: 1em solid #534956;
-    /*background: url(../img/p6.png);*/
-    background: url(../img/brushed.png);
+    /*background: url(../img/brushed.png);*/
     /*background-color: #2d3a62;*/
     position: relative;
     padding: 20px;
